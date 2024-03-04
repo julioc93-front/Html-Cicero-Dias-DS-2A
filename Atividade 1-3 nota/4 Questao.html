@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questão 4</title>
+<style>
+    .caixa {
+        width: 600px;
+        height: 400px;
+        border-radius: 10px;
+        background-image: url(https://www.flameretardants-online.com/images/itempics/6/9/2/item_18296_pic_1_orig.jpg);
+        background-size: cover;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .caixa-menor {
+        width: calc(50% - 15px); /* 50% menos a margem e o padding */
+        border: 1px solid #000;
+        padding: 10px;
+    }
+    
+    .caixa-menor:nth-child(1) {
+        background-color: #fff; /* Fundo branco para a primeira caixa menor */
+    }
+    
+    .caixa-menor:nth-child(2) {
+        background-color: #000; /* Fundo preto para a segunda caixa menor */
+    }
+</style>
+</head>
+<body>
+<div class="caixa">
+    <div class="caixa-menor"></div>
+    <div class="caixa-menor"></div>
+</div>
+</body>
+</html>
