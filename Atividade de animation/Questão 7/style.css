@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    transform: scale(0);
+    opacity: 0;
+    animation: growAndChangeColor 4s forwards
+}
+
+@keyframes growAndChangeColor {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+        background-color: blue;
+    }
+    50% {
+        opacity: 1;
+        background-color: green;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+        background-color: white;
+    }
+    
+}

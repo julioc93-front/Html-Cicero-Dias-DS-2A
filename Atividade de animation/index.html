@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu das Questões</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .question-container {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="menu">
+    <h1>Menu de Questões</h1>
+    <button onclick="showQuestion(1)">Questão 1</button>
+    <button onclick="showQuestion(2)">Questão 2</button>
+    <button onclick="showQuestion(3)">Questão 3</button>
+    <button onclick="showQuestion(4)">Questão 4</button>
+    <button onclick="showQuestion(5)">Questão 5</button>
+    <button onclick="showQuestion(6)">Questão 6</button>
+    <button onclick="showQuestion(7)">Questão 7</button>
+    <button onclick="showQuestion(8)">Questão 8</button>
+    <button onclick="showQuestion(9)">Questão 9</button>
+    <button onclick="showQuestion(10)">Questão 10</button>
+    <button onclick="showQuestion(11)">Questão 11</button>
+    <button onclick="showQuestion(12)">Questão 12</button>
+    <button onclick="showQuestion(13)">Questão 13</button>
+    <button onclick="showQuestion(14)">Questão 14</button>
+    <button onclick="showQuestion(15)">Questão 15</button>
+</div>
+
+<div id="question1" class="question-container">
+    <h2>Questão 1</h2>
+    <p>Aqui está a resposta da Questão 1.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question2" class="question-container">
+    <h2>Questão 2</h2>
+    <p>Aqui está a resposta da Questão 2.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question3" class="question-container">
+    <h2>Questão 3</h2>
+    <p>Aqui está a resposta da Questão 3.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question4" class="question-container">
+    <h2>Questão 4</h2>
+    <p>Aqui está a resposta da Questão 4.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question5" class="question-container">
+    <h2>Questão 5</h2>
+    <p>Aqui está a resposta da Questão 5.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question6" class="question-container">
+    <h2>Questão 6</h2>
+    <p>Aqui está a resposta da Questão 6.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question7" class="question-container">
+    <h2>Questão 7</h2>
+    <p>Aqui está a resposta da Questão 7.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question8" class="question-container">
+    <h2>Questão 8</h2>
+    <p>Aqui está a resposta da Questão 8.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question9" class="question-container">
+    <h2>Questão 9</h2>
+    <p>Aqui está a resposta da Questão 9.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question10" class="question-container">
+    <h2>Questão 10</h2>
+    <p>Aqui está a resposta da Questão 10.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question11" class="question-container">
+    <h2>Questão 11</h2>
+    <p>Aqui está a resposta da Questão 11.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question12" class="question-container">
+    <h2>Questão 12</h2>
+    <p>Aqui está a resposta da Questão 12.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question13" class="question-container">
+    <h2>Questão 13</h2>
+    <p>Aqui está a resposta da Questão 13.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question14" class="question-container">
+    <h2>Questão 14</h2>
+    <p>Aqui está a resposta da Questão 14.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+<div id="question15" class="question-container">
+    <h2>Questão 15</h2>
+    <p>Aqui está a resposta da Questão 15.</p>
+    <button onclick="backToMenu()">Voltar ao Menu</button>
+</div>
+
+
+<script>
+    function showQuestion(questionNumber) {
+        document.getElementById('menu').style.display = 'none';
+        document.getElementById('question' + questionNumber).style.display = 'block';
+    }
+
+    function backToMenu() {
+        document.querySelectorAll('.question-container').forEach(function(el) {
+            el.style.display = 'none';
+        });
+        document.getElementById('menu').style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

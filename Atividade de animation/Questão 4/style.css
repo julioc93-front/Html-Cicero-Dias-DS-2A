@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: relative;
+    animation: moveRight 4s forwards;
+}
+
+@keyframes moveRight {
+    from {left: 0;}
+    to {left: 500px;}
+}

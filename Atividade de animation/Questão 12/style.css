@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.login-container {
+    display: active;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgb(255, 0, 0);
+    animation: slideIn 2s forwards;
+}
+
+.button-container {
+    display: center;
+    justify-content: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-600%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
