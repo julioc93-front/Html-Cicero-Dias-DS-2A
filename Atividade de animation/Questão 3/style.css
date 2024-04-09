@@ -1,0 +1,22 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.circulo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    transition: background-color 0.5s ease, width 0.5s ease, height 0.5s ease;
+}
+
+.circulo:hover {
+    background-color: rgb(229, 255, 0);
+    width: 500px;
+    height: 500px;
+}

@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+}
+
+.quadrado {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    animation: rotatequadrado 3s forwards;
+}
+
+@keyframes rotatequadrado {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
